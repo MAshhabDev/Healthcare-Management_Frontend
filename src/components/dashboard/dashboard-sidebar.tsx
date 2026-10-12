@@ -13,11 +13,11 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import Logo from "@/assets/svg/Logo";
-import { UserRole } from "@/types";
 import { adminRoutes, doctorRoutes, patientRoutes } from "@/routes";
 import { SidebarItems } from "@/types/sidebar.type";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { UserRole } from "@/types/user.type";
 
 const sidebarRoutes: Partial<Record<UserRole, SidebarItems>> = {
   SUPER_ADMIN: adminRoutes,
