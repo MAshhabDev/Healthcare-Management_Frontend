@@ -4,9 +4,9 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { ReactNode } from "react";
 import { DashboardSidebar } from "./dashboard-sidebar";
-import type { UserRole } from "@/types/user.type";
+import { ReactNode } from "react";
+import { UserRole } from "@/types";
 
 export default function DashboardShell({
   children,

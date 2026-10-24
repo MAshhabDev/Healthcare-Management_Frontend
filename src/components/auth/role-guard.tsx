@@ -4,8 +4,8 @@ import { useGetMe } from "@/hooks";
 import { useRouter } from "next/navigation";
 import { ReactNode, useEffect } from "react";
 import AuthLoading from "./auth-loading";
+import { UserRole } from "@/types";
 import AccessDenied from "./access-denied";
-import type { UserRole } from "@/types/user.type";
 
 interface IProps {
   children: ReactNode;

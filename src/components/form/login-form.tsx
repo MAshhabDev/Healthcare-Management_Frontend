@@ -16,10 +16,10 @@ import { Eye, EyeClosed } from "lucide-react";
 import { useGoogleOAuth, useLogin } from "@/hooks";
 import { useRouter } from "next/navigation";
 import { toast } from "../ui/toast";
+import { Spinner } from "../ui/spinner";
 import { GoogleLogin } from "@react-oauth/google";
 import Link from "next/link";
 import GoogleLoginComponent from "../modules/google-login/GoogleLogin";
-import { Spinner } from "../ui/spinner";
 
 export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
