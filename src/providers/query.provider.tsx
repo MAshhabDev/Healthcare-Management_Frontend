@@ -5,6 +5,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
+import { kill } from "process";
 import { ReactNode } from "react";
 
 function makeQueryClient() {
